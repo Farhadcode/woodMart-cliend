@@ -1,0 +1,54 @@
+.navbar{
+    background-color: #4d148C;
+}
+
+.logo-style{
+    font-size: 40px;   
+    font-weight: 800;  
+    
+}
+.log-name{
+    color: white;
+}
+.log-name-end{
+    color: orange;
+}
+.toggle {
+    background-color: white;
+    color: black;
+}
+Nav a{
+    text-decoration: none;
+    color: white; 
+    margin-left: 30px;
+    padding: 10px;
+}
+Nav a:hover{
+    color: white;
+}
+.nav-style{
+    font-size: 24px;   
+    font-weight: 700; 
+    
+}
+
+.main-btn {
+    font-weight: 800;
+    height: 50px;
+    width: 150px;
+    padding: 5px;
+    color: orange;
+  
+ }
+ .user-style{
+     display:flex;
+     color: white;  
+
+ }
+ .user-style img{
+     width: 50px;
+     height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+    
+ }
