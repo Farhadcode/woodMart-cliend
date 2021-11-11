@@ -9,28 +9,35 @@ import {
 import Products from './Pages/HomePage/Products/Products';
 import Home from './Pages/HomePage/Home/Home';
 import Navigation from './Pages/Shared/Navigation/Navigation';
+import AuthProvider from './Contexts/AuthProvider/AuthProvider';
+import Login from './Pages/Login/Login/Login';
+import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Navigation />
-        <Switch>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route path="/home">
-            <Home></Home>
-          </Route>
-          <Route path="/products">
+      <AuthProvider>
+        <Router>
+          <Navigation />
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route path="/home">
+              <Home></Home>
+            </Route>
+            <PrivateRoute path="/products">
+              <Products></Products>
+            </PrivateRoute>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
 
-            <Products></Products>
-          </Route>
+          </Switch>
 
-        </Switch>
-
-      </Router>
+        </Router>
+      </AuthProvider>
     </div>
   );
 }
