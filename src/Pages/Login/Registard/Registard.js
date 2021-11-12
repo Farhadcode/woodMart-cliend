@@ -31,8 +31,8 @@ const Registard = () => {
         e.preventDefault();
     }
     return (
-        <div>
-            <h2> registard page</h2>
+        <div className="from-style mx-5">
+            <h2> Registard </h2>
             <form onSubmit={handleRegisterSubmit}>
 
                 <input
@@ -63,7 +63,8 @@ const Registard = () => {
 
                 <br />
 
-                <input type="submit" />
+                <input className="main-btn rounded-pill" type="submit" />
+                <br />
                 <NavLink
 
                     to="/login"> <Button variant="text">New User? Pleace Login </Button></NavLink>

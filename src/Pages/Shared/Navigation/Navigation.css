@@ -39,12 +39,13 @@ Nav a:hover{
     padding: 4px;
     background-color: orange ;
     color: white;
+   
   
  }
 .main-btn:hover {
    
-    background-color: rgb(0, 255, 191) ;
-    color: white;
+    background-color:#021f2e;
+    color:#fff;
   
  }
  .user-style{

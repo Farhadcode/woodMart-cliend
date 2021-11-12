@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { useHistory, useLocation } from "react-router";
 import { NavLink } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
+import './Login.css'
 
 const Login = () => {
 
@@ -33,7 +34,7 @@ const Login = () => {
 
 
     return (
-        <div>
+        <div className="from-style mx-5">
             <h2>Login</h2>
             <form onSubmit={handleLoginSubmit}>
 
@@ -57,7 +58,8 @@ const Login = () => {
                 <br />
 
 
-                <input type="submit" />
+                <input className="main-btn rounded-pill " type="submit" />
+                <br />
                 <NavLink
 
                     to="/register"> <Button variant="text">New User? Pleace Login </Button></NavLink>
