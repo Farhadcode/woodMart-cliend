@@ -3,9 +3,12 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Navigation.css'
 import Login from './../../Login/Login/Login';
+import useAuth from '../../../hooks/useAuth';
 
 
 const Navigation = () => {
+    const { user, logout, } = useAuth()
+    console.log(user);
 
     return (
         <>
@@ -17,12 +20,15 @@ const Navigation = () => {
                         <Nav className="nav-style">
                             <Link to="/home">Home</Link>
                             <Link to="/products">products</Link>
-                            <Link to="/login">Login</Link>
-                            {/* {user?.email ?
-                                <Link to="/home"> <button className="main-btn rounded-pill"> LogOut</button></Link>
+                            {/* <Link to="/login">Login</Link> */}
+                            {user?.email ?
+                                <Link to="/home"> <button onClick={logout} className="main-btn rounded-pill"> LogOut</button></Link>
                                 :
                                 <Link to="/login"> <button className="main-btn rounded-pill">Login </button></Link>
-                            } */}
+                            }
+                            <Navbar.Text>
+                                <Link to="/home">{user?.email}</Link>
+                            </Navbar.Text>
                         </Nav>
                     </Navbar.Collapse>
 

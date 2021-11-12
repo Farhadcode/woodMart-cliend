@@ -12,6 +12,7 @@ import Navigation from './Pages/Shared/Navigation/Navigation';
 import AuthProvider from './Contexts/AuthProvider/AuthProvider';
 import Login from './Pages/Login/Login/Login';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import Registard from './Pages/Login/Registard/Registard';
 
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
             </PrivateRoute>
             <Route path="/login">
               <Login></Login>
+            </Route>
+            <Route path="/register">
+              <Registard></Registard>
             </Route>
 
           </Switch>

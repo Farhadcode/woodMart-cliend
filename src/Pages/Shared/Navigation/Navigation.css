@@ -35,9 +35,16 @@ Nav a:hover{
 .main-btn {
     font-weight: 800;
     height: 50px;
-    width: 150px;
-    padding: 5px;
-    color: orange;
+    width: 120px;
+    padding: 4px;
+    background-color: orange ;
+    color: white;
+  
+ }
+.main-btn:hover {
+   
+    background-color: rgb(0, 255, 191) ;
+    color: white;
   
  }
  .user-style{
