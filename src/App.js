@@ -18,6 +18,7 @@ import Order from './Pages/HomePage/Order/Order';
 import AddProduct from './Pages/Admin/AddProduct/AddProduct';
 import Serveces from './Pages/HomePage/Serveces/Serveces';
 import Products from './Pages/AllProduct/Products/Products';
+import Purchase from './Pages/Shop/Purchase/Purchase';
 
 
 function App() {
@@ -33,8 +34,11 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <PrivateRoute path="/products">
+            <Route path="/products">
               <Products></Products>
+            </Route>
+            <PrivateRoute path="/purchase/:productId">
+              <Purchase></Purchase>
             </PrivateRoute>
             <Route path="/admin">
               <Admin></Admin>

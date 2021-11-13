@@ -10,7 +10,7 @@ const Serveces = () => {
             .then(res => res.json())
             .then(data => setServece(data.slice(0, 6)))
     }, [])
-    console.log(servece);
+    //console.log(servece);
     return (
         <div>
             <h1> all products{servece.length}</h1>
@@ -18,7 +18,7 @@ const Serveces = () => {
             <div className="service-container">
                 {
                     servece.map(servece => <Servece
-                        key={servece.id}
+                        key={servece._id}
                         servece={servece}
                     ></Servece>)
                 }

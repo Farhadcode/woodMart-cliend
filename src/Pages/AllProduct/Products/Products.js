@@ -11,7 +11,7 @@ const Products = () => {
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [])
-    console.log(product);
+    // console.log(product);
     return (
         <div>
             <h1> all products{product.length}</h1>
@@ -19,7 +19,7 @@ const Products = () => {
             <div className="service-container">
                 {
                     product.map(pd => <Product
-                        key={pd.id}
+                        key={pd._id}
                         product={pd}
                     ></Product>)
                 }
