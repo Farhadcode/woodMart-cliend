@@ -33,11 +33,11 @@ const AdminDashBord = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* <div className="col-md-9 text-center  text-center">
-                            {control === "allOrder" && <OrderManage></OrderManage>}
-                            {control === "addService" && <AddService></AddService>}
 
-                        </div> */}
+                        <div className="col-md-9 text-center  text-center">
+                            <h2> hello text</h2>
+
+                        </div>
                     </div>
                 </div>
             </div>

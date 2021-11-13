@@ -24,7 +24,7 @@ const Navigation = () => {
 
                             {
                                 user?.email ?
-                                    <Link to="/order">Order</Link> : ""
+                                    <Link to="/userDashboard">Dashboard</Link> : ""
                             }
                             {
                                 user?.email ?

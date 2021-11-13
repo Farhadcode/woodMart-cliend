@@ -24,7 +24,8 @@ const PlaceOrder = () => {
             <form className="from-style" onSubmit={handleSubmit(onSubmit)}>
                 <input defaultValue={user.displayName} {...register("name", { required: true, maxLength: 20 })} placeholder="Name" />
                 <input defaultValue={user.email}{...register("email")} placeholder="Email" />
-                <input {...register("Address")} placeholder="Address" />
+                <input {...register("phoneNumber")} placeholder="Phone Number" />
+                <input {...register("address")} placeholder="Address" />
                 <input className="main-btn rounded-pill " type="submit" />
             </form>
         </div>
