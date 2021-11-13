@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Product.css'
+import './Servece.css'
 
-const Product = ({ product }) => {
-    const { name, image, productDetals, id, price } = product;
+const Servece = ({ servece }) => {
+    const { name, image, description, _id, price } = servece;
     return (
         <div className="crad">
             <div>
@@ -11,12 +11,12 @@ const Product = ({ product }) => {
             </div>
             <div className="card-body">
                 <h2> {name} </h2>
-                <p>{productDetals}</p>
+                <p>{description}</p>
                 <h5>${price}</h5>
-                <Link to={`/booking/${id}`}> <button className="">Booking</button></Link>
+                <Link to={`/booking/${_id}`}> <button className="">Add to Card</button></Link>
             </div>
         </div>
     );
 };
 
-export default Product;
+export default Servece;

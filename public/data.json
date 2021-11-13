@@ -1,104 +1,103 @@
 [
     {
-      "id":"1" ,
+      
       "name":"Pen Box",
       "price":"119",
-      "image":" https://i.ibb.co/BsQJnvC/product-furniture-14.jpg",
+      "image":"https://i.ibb.co/BsQJnvC/product-furniture-14.jpg",
      
-      "productDetals":"Adipiscing neque a a montes parturient scelerisque molestie magnis adipiscing mus porta parturient est a blandit fusce adipiscing augue per magnis venenatis ullamcorper."
+      "description":"Adipiscing neque a a montes parturient scelerisque molestie magnis adipiscing mus porta parturient est a blandit fusce adipiscing augue per magnis venenatis ullamcorper."
 
     },
     {
-      "id":"2" ,
       "name":"Wood Brash",
       "price":"99",
       "image":"https://i.ibb.co/gJDFKpY/product-accessories-11.jpg" ,
-      "productDetals":"Adipiscing neque a a montes parturient scelerisque molestie magnis adipiscing mus porta parturient est a blandit fusce adipiscing augue per magnis venenatis ullamcorper."
+      "description":"Adipiscing neque a a montes parturient scelerisque molestie magnis adipiscing mus porta parturient est a blandit fusce adipiscing augue per magnis venenatis ullamcorper."
 
     },
     {
-      "id":"3" ,
+      
       "name":"iPhone Dock",
       "price":"399.00",
       "image":"https://i.ibb.co/L9LhK7C/dock-black-walnut-ip6-grid-B1-1.jpg" ,
-      "productDetals":"Consequat a scelerisque suspendisse vel et eget eu vitae adipiscing nibh scelerisque semper cum adipiscing facilisis adipiscing est accumsan lorem vestibulum."
+      "description":"Consequat a scelerisque suspendisse vel et eget eu vitae adipiscing nibh scelerisque semper cum adipiscing facilisis adipiscing est accumsan lorem vestibulum."
 
     },
     {
-      "id":"4" ,
+      
       "name":"Wine bottle lantern",
       "price":"399",
       "image":"https://i.ibb.co/8jhXn5J/product-furniture-11-2.jpg" ,
-      "productDetals":"Consequat a scelerisque suspendisse vel et eget eu vitae adipiscing nibh scelerisque semper cum adipiscing facilisis adipiscing est accumsan lorem vestibulum. Aliquet mus a aptent ullam corper metus accumsan. Habitasse a purus nec ipsum a urna ac ullamcorper varius metus blandit posuere."
+      "description":"Consequat a scelerisque suspendisse vel et eget eu vitae adipiscing nibh scelerisque semper cum adipiscing facilisis adipiscing est accumsan lorem vestibulum. Aliquet mus a aptent ullam corper metus accumsan. Habitasse a purus nec ipsum a urna ac ullamcorper varius metus blandit posuere."
 
     },
     {
-      "id":"5" ,
+     
       "name":"Smart watches wood edition",
       "price":"599",
       "image":"https://i.ibb.co/z76s4t3/product-accessories-8.jpg" ,
-      "productDetals":"Himenaeos parturient nam a justo placerat lorem erat pretium a fusce pharetra pretium enim sagittis ut nunc neque torquent sem a leo. Dictumst himenaeos primis torquent ridiculus."
+      "description":"Himenaeos parturient nam a justo placerat lorem erat pretium a fusce pharetra pretium enim sagittis ut nunc neque torquent sem a leo. Dictumst himenaeos primis torquent ridiculus."
 
     },
     
    
 
     {
-      "id":"6" ,
+      
       "name":"Wall clock light wood",
       "price":"899",
       "image":"https://i.ibb.co/x508Kk3/product-clock-2-1.jpg" ,
-      "productDetals":"Justo parturient parturient odio duis eleifend a at litora a enim dictum ut vestibulum neque fermentum tortor commodo ridiculus posuere sociosqu torquent."
+      "description":"Justo parturient parturient odio duis eleifend a at litora a enim dictum ut vestibulum neque fermentum tortor commodo ridiculus posuere sociosqu torquent."
 
     },
     {
-      "id":"7" ,
+      
       "name":"Nibh condimentum ridiculus",
       "price":"559",
       "image":"https://i.ibb.co/GdysXv1/clocks3.jpg" ,
-      "productDetals":"Penatibus adipiscing orci interdum velit rutrum tincidunt condimentum a torquent fusce nullam nisi nam odio penatibus tincidunt magnis placerat enim. Nec pulvinar netus class suspendisse vestibulum praesent mi curae erat consequat potenti congue in nibh."
+      "description":"Penatibus adipiscing orci interdum velit rutrum tincidunt condimentum a torquent fusce nullam nisi nam odio penatibus tincidunt magnis placerat enim. Nec pulvinar netus class suspendisse vestibulum praesent mi curae erat consequat potenti congue in nibh."
 
     },
     {
-      "id":"8" ,
+     
       "name":"Tempus bibendum parturient",
       "price":"499",
       "image":"https://i.ibb.co/V9R4ChB/clocks9-700x800-jpg.webp" ,
-      "productDetals":"Placerat tempor dolor eu leo ullamcorper et magnis habitant ultrices consectetur arcu nulla mattis fermentum adipiscing a et bibendum sed platea malesuada eget vestibulum."
+      "description":"Placerat tempor dolor eu leo ullamcorper et magnis habitant ultrices consectetur arcu nulla mattis fermentum adipiscing a et bibendum sed platea malesuada eget vestibulum."
 
     },
     {
-      "id":"9" ,
+      
       "name":"Adipiscing suspendisse elementum",
       "price":"569",
       "image":" https://i.ibb.co/HB3g6Wj/clocks5-2.jpg" ,
-      "productDetals":"Placerat tempor dolor eu leo ullamcorper et magnis habitant ultrices consectetur arcu nulla mattis fermentum adipiscing a et bibendum sed platea malesuada eget vestibulum."
+      "description":"Placerat tempor dolor eu leo ullamcorper et magnis habitant ultrices consectetur arcu nulla mattis fermentum adipiscing a et bibendum sed platea malesuada eget vestibulum."
 
     },
     {
-      "id":"10" ,
+     
       "name":"Panton tunior chair",
       "price":"229",
       "image":"https://i.ibb.co/sPhjhMN/product-furniture-19-3.jpg" ,
-      "productDetals":"Placerat tempor dolor eu leo ullamcorper et magnis habitant ultrices consectetur arcu nulla mattis fermentum adipiscing a et bibendum sed platea malesuada eget vestibulum."
+      "description":"Placerat tempor dolor eu leo ullamcorper et magnis habitant ultrices consectetur arcu nulla mattis fermentum adipiscing a et bibendum sed platea malesuada eget vestibulum."
 
     },
    
 
     {
-      "id":"11" ,
+     
       "name":"Light wood consectetur",
       "price":"399",
       "image":" https://i.ibb.co/Y2gkb33/light4.jpg" ,
-      "productDetals":"Consequat a scelerisque suspendisse vel et eget eu vitae adipiscing nibh scelerisque semper cum adipiscing facilisis adipiscing est accumsan lorem vestibulum."
+      "description":"Consequat a scelerisque suspendisse vel et eget eu vitae adipiscing nibh scelerisque semper cum adipiscing facilisis adipiscing est accumsan lorem vestibulum."
 
     },
     {
-      "id":"12" ,
+     
       "name":"wood key case",
       "price":"149",
       "image":"https://i.ibb.co/BPqynHv/accessories1.jpg" ,
-      "productDetals":"Consequat a scelerisque suspendisse vel et eget eu vitae adipiscing nibh scelerisque semper cum adipiscing facilisis adipiscing est accumsan lorem vestibulum."
+      "description":"Consequat a scelerisque suspendisse vel et eget eu vitae adipiscing nibh scelerisque semper cum adipiscing facilisis adipiscing est accumsan lorem vestibulum."
 
     }
     

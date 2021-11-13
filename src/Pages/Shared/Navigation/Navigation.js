@@ -21,6 +21,15 @@ const Navigation = () => {
                             <Link to="/home">Home</Link>
                             <Link to="/products">products</Link>
                             {/* <Link to="/login">Login</Link> */}
+
+                            {
+                                user?.email ?
+                                    <Link to="/order">Order</Link> : ""
+                            }
+                            {
+                                user?.email ?
+                                    <Link to="/admin">Admin</Link> : ""
+                            }
                             {user?.email ?
                                 <Link to="/home"> <button onClick={logout} className="main-btn rounded-pill"> LogOut</button></Link>
                                 :

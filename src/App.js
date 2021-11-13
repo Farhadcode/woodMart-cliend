@@ -6,13 +6,18 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Products from './Pages/HomePage/Products/Products';
+
 import Home from './Pages/HomePage/Home/Home';
 import Navigation from './Pages/Shared/Navigation/Navigation';
 import AuthProvider from './Contexts/AuthProvider/AuthProvider';
 import Login from './Pages/Login/Login/Login';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Registard from './Pages/Login/Registard/Registard';
+import Admin from './Pages/Admin/AdminDashBord/AdminDashBord';
+import Order from './Pages/HomePage/Order/Order';
+import AddProduct from './Pages/Admin/AddProduct/AddProduct';
+import Serveces from './Pages/HomePage/Serveces/Serveces';
+import Products from './Pages/AllProduct/Products/Products';
 
 
 function App() {
@@ -31,11 +36,20 @@ function App() {
             <PrivateRoute path="/products">
               <Products></Products>
             </PrivateRoute>
+            <Route path="/admin">
+              <Admin></Admin>
+            </Route>
+            <Route path="/order">
+              <Order></Order>
+            </Route>
             <Route path="/login">
               <Login></Login>
             </Route>
             <Route path="/register">
               <Registard></Registard>
+            </Route>
+            <Route path="/addProduct">
+              <AddProduct></AddProduct>
             </Route>
 
           </Switch>
