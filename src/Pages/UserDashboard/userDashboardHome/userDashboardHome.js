@@ -9,8 +9,7 @@ import {
     useParams,
     useRouteMatch
 } from "react-router-dom";
-import useAuth from '../../../hooks/useAuth';
-import UserDashboardRoute from '../../Login/UserDashboardRoute/UserDashboardRoute';
+
 import MyOrder from '../MyOrder/MyOrder';
 import Payment from '../Payment/Payment';
 import Review from '../Review/Review';
@@ -36,17 +35,14 @@ const UserDashboardHome = () => {
                             <div className="admin-area p-1">
                                 <h4>UserDashboard</h4>
                                 <div className="all-menu mt-5">
-                                    <Link to={`${url}`} className="admin-menu p-5 ">userDashboard</Link>
-                                    <br />
-                                    <Link to={`${url}/payment`} className="admin-menu p-5">Payment</Link>
-                                    <br />
-                                    <Link to={`${url}/review`} className="admin-menu p-2" >Review</Link>
-                                    {/* <li  >
-                                       
-                                    </li>
-                                    <li className="admin-menu p-2" >
-                                       
-                                    </li> */}
+                                    <div>
+                                        <Link to={`${url}`} className="dashboard-style ">My Order</Link>
+                                        <br />
+                                        <Link to={`${url}/payment`} className="dashboard-style">Payment</Link>
+                                        <br />
+                                        <Link to={`${url}/review`} className="dashboard-style" >Review</Link>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -77,15 +73,10 @@ const UserDashboardHome = () => {
                         </Switch> */}
                     </div>
                 </div>
-                <h2> hello</h2>
+
             </div>
         </div>
     );
-    // <div>
-    //     <MyOrder></MyOrder>
-    //     <Review></Review>
-    //     <Payment></Payment>
-    // </div>
 
 };
 

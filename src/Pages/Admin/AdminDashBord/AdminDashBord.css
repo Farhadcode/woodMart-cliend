@@ -6,10 +6,21 @@
   .admin-container {
     overflow-x: hidden;
   }
-  .admin-menu {
+  /* .admin-menu {
     list-style: none;
     cursor: pointer;
   }
   .admin-menu:hover {
+    color: orange;
+  } */
+  .dashboard-style {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding-top: 20px;
+    margin: 10px;
+
+  }
+  .dashboard-style:hover{
     color: orange;
   }
