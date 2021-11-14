@@ -75,16 +75,28 @@ const ReviewShow = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <OwlCarousel id="customer-testimonoals" className="owl-carousel owl-theme" {...options}>
-
                                 {
-                                    customerReview.map(customerReview => <DisplasyReview>
-                                        key={customerReview._id}
-                                        customerReview={customerReview}
-                                        ></DisplasyReview>
-                                    )
+                                    customerReview.length === 0 ?
+                                        <div class="item">
+                                            <div class="shadow-effect">
+                                                {/* <img class="img-circle" src={userPic} /> */}
+
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                            </div>
+                                            <div class="testimonial-name">
+                                                <h5>Rajon Rony</h5>
+                                                <small>ITALY</small>
+                                            </div>
+                                        </div> :
+                                        customerReview.map(review => <DisplasyReview
+                                            key={review._id}
+                                            review={review}>
+                                        </DisplasyReview>
+
+                                        )
+
 
                                 }
-
 
                             </OwlCarousel>
                         </div>

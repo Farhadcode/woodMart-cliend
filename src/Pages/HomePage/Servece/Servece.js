@@ -4,6 +4,7 @@ import './Servece.css'
 
 const Servece = ({ servece }) => {
     const { name, image, description, _id, price } = servece;
+
     return (
         <div className="crad">
             <div>

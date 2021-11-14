@@ -4,6 +4,7 @@ import './Serveces.css'
 
 const Serveces = () => {
     const [servece, setServece] = useState([]);
+    //console.log(servece);
 
     useEffect(() => {
         fetch('http://localhost:5000/products')

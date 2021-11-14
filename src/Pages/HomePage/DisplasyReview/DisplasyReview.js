@@ -1,13 +1,13 @@
 import React from 'react';
 
-const DisplasyReview = ({ customerReview }) => {
-    console.log();
+const DisplasyReview = ({ review }) => {
+    console.log(review);
 
-    const { name, description, image, county } = customerReview;
+    const { name, description, image, county } = review;
     return (
-        <div class="item">
-            <div class="shadow-effect">
-                <img class="img-circle" src={image} />
+        <div className="item">
+            <div className="shadow-effect">
+                <img className="img-circle" src={image} />
                 <p>{description}</p>
             </div>
             <div class="testimonial-name">
