@@ -12,7 +12,7 @@ const MyOrder = () => {
             .then(res => res.json())
             .then(data => setMyOrder(data));
     }, [user.email]);
-    // console.log(myOrder);
+    console.log(myOrder);
 
     const myOrderDelete = (id) => {
 
@@ -32,37 +32,30 @@ const MyOrder = () => {
     return (
         <div>
             <h2 className="text-center mb-5">My Order: {myOrder?.length}</h2>
-            <Table striped bordered hover>
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Name</th>
-                        <th>phone</th>
-                        <th>Email</th>
-                        {/* <th>Price</th>
-                    <th>Address</th> */}
-                        <th>Date</th>
 
+            <div className="services">
+                <div className="row container">
+                    {myOrder?.map((order, index) => (
+                        <div className="col-md-4">
+                            <div className="service border border p-3">
+                                <div className="services-img ">
+                                    <img className="w-100" src={order?.image} alt="" />
+                                </div>
 
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                {myOrder?.map((order, index) => (
-                    <tbody>
-                        <tr>
-                            <td>{index}</td>
-                            <td>{order?.name}</td>
-                            <td>{order?.phoneNumber}</td>
-                            <td>{order?.email}</td>
-                            {/* <td>{order?.Charge}</td>
-                        <td>{order?.address}</td> */}
-                            <td>{order?.address}</td>
-                            <button className="btn bg-danger p-2" onClick={() => myOrderDelete(order?._id)} >Cancel Order</button>
-                        </tr >
-                    </tbody >
-                ))}
-            </Table >
+                                <h6>{order?.name}</h6>
+                                <h4>{order?.model}</h4>
+                                <p>{order?.description}</p>
+                                <h3 className="text-danger"> Cost :${order?.price}</h3>
+
+                                <button className="btn bg-danger p-2" onClick={() => myOrderDelete(order?._id)} >Cancel</button>
+
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
         </div>
+
     );
 };
 

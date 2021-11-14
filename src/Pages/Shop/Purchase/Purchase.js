@@ -1,11 +1,15 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router';
-import PlaceOrder from './../PlaceOrder/PlaceOrder';
+import useAuth from '../../../hooks/useAuth';
+
 
 const Purchase = () => {
     const { productId } = useParams();
-
+    const { user } = useAuth();
     const [product, setProduct] = useState({});
+    const { register, handleSubmit, reset } = useForm();
 
     useEffect(() => {
         fetch(`http://localhost:5000/products/${productId}`)
@@ -13,6 +17,18 @@ const Purchase = () => {
             .then(data => setProduct(data))
     }, [])
 
+
+    const onSubmit = data => {
+        console.log(data);
+        axios.post('http://localhost:5000/order', data)
+            .then(res => {
+                console.log(res);
+                if (res.data.insertedId) {
+                    alert('added  successfully');
+                    reset();
+                }
+            })
+    }
     return (
         <div>
             <div>
@@ -26,7 +42,19 @@ const Purchase = () => {
                 </div>
             </div>
             <div>
-                <PlaceOrder></PlaceOrder>
+                <div className="add-service">
+                    <h2> Order Place</h2>
+                    <form className="from-style" onSubmit={handleSubmit(onSubmit)}>
+                        <input defaultValue={product?.name} {...register("name", { required: true })} placeholder="Name" />
+                        <input defaultValue={product?.image}{...register("image", { required: true })} placeholder="Product Image" />
+                        <input defaultValue={product?.price}{...register("price", { required: true })} placeholder="Price" />
+                        <input defaultValue={user?.email}{...register("email", { required: true })} placeholder="Email" />
+                        <input {...register("PhoneNumer", { required: true })} placeholder="PhoneNuber" />
+                        <input {...register("date")} type="date" placeholder="date" />
+                        <input {...register("address", { required: true })} placeholder="Address" />
+                        <input className="main-btn rounded-pill " type="submit" value="Order" />
+                    </form>
+                </div>
             </div>
         </div>
     );

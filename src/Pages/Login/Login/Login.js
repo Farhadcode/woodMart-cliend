@@ -58,7 +58,7 @@ const Login = () => {
                 <br />
 
 
-                <input className="main-btn rounded-pill " type="submit" />
+                <input className="main-btn rounded-pill " type="submit" value="Login" />
                 <br />
                 <NavLink
 

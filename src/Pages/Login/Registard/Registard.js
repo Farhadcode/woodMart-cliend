@@ -63,7 +63,7 @@ const Registard = () => {
 
                 <br />
 
-                <input className="main-btn rounded-pill" type="submit" />
+                <input className="main-btn rounded-pill" type="submit" value="Registerd" />
                 <br />
                 <NavLink
 
