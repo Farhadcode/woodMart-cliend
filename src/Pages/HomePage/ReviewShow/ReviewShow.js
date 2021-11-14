@@ -16,9 +16,10 @@ const ReviewShow = () => {
             .then(res => res.json())
             .then(data => setCustomerReview(data))
     }, []);
-    console.log(customerReview);
+    // console.log(customerReview);
     // const testiMonials = [
     //     {
+
     //         name: 'Rekob Ramya',
     //         description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
     //         address: 'USA',
@@ -37,6 +38,8 @@ const ReviewShow = () => {
     //         img: 'https://i.ibb.co/CP5sj7g/2856040-58866808-2560-1440.jpg'
     //     },
     //     {
+
+
     //         name: 'Kevin Canlas',
     //         description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
     //         address: 'USA',
@@ -105,16 +108,7 @@ const ReviewShow = () => {
             </section >
         </>
     );
-    // <div>
-    //     <h2>Product Review :{review.length} </h2>
-    //     {
-    //         review.map(review => <DisplasyReview
-    //             key={review._id}
-    //             allReview={review}
-    //         ></DisplasyReview>)
-    //     }
-    // </div>
-    // )
+
 
 };
 

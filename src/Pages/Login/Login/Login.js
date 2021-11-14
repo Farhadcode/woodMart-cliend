@@ -23,7 +23,7 @@ const Login = () => {
         const newLoginData = { ...loginData };
         newLoginData[field] = value;
         setloginData(newLoginData);
-        console.log(newLoginData);
+        //console.log(newLoginData);
 
     }
     const handleLoginSubmit = e => {
@@ -62,11 +62,9 @@ const Login = () => {
                 <br />
                 <NavLink
 
-                    to="/register"> <Button variant="text">New User? Pleace Login </Button></NavLink>
+                    to="/register"> <Button variant="text">New User? Pleace Registard </Button></NavLink>
 
             </form>
-
-
 
         </div>
     );
