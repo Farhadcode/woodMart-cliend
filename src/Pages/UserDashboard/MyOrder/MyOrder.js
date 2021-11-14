@@ -5,11 +5,7 @@ import useAuth from '../../../hooks/useAuth';
 const MyOrder = () => {
     const [myOrder, setMyOrder] = useState([]);
     const { user } = useAuth();
-    // useEffect(() => {
-    //     fetch(`http://localhost:5000/order/${user.email}`)
-    //         .then(res => res.json())
-    //         .then(data => setMyOrder(data))
-    // }, [])
+
 
     useEffect(() => {
         fetch(`http://localhost:5000/myOrders/${user?.email}`)
@@ -20,7 +16,7 @@ const MyOrder = () => {
 
     const myOrderDelete = (id) => {
 
-        fetch(`http://localhost:5000/myOrders/${id}`, {
+        fetch(`http://localhost:5000/orders/${id}`, {
             method: "DELETE",
         })
             .then(res => res.json())
@@ -61,7 +57,7 @@ const MyOrder = () => {
                             {/* <td>{order?.Charge}</td>
                         <td>{order?.address}</td> */}
                             <td>{order?.address}</td>
-                            <button className="btn bg-danger p-2" onClick={() => myOrderDelete(order?._id)} >Delete</button>
+                            <button className="btn bg-danger p-2" onClick={() => myOrderDelete(order?._id)} >Cancel Order</button>
                         </tr >
                     </tbody >
                 ))}
