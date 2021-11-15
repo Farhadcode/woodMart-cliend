@@ -20,7 +20,7 @@ const Navigation = () => {
                         <Nav className="nav-style">
                             <Link to="/home">Home</Link>
                             <Link to="/products">products</Link>
-                            {/* <Link to="/login">Login</Link> */}
+
 
                             {
                                 user?.email ?
@@ -30,14 +30,17 @@ const Navigation = () => {
                                 user?.email && admin ?
                                     <Link to="/admin">Admin</Link> : ""
                             }
+
                             {user?.email ?
                                 <Link to="/home"> <button onClick={logout} className="main-btn rounded-pill"> LogOut</button></Link>
+
                                 :
                                 <Link to="/login"> <button className="main-btn rounded-pill">Login </button></Link>
                             }
-                            <Navbar.Text>
-                                <Link to="/home">{user?.displayName}</Link>
+                            <Navbar.Text >
+                                <p className="name">{user?.displayName}</p>
                             </Navbar.Text>
+
                         </Nav>
                     </Navbar.Collapse>
 

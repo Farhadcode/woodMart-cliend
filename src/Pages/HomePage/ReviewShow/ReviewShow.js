@@ -71,11 +71,11 @@ const ReviewShow = () => {
     };
 
     return (
-        <>
+        <div className="review-body">
             <section id="testimonial" className="testimonials pt-70 pb-70">
                 <div className="container mt-5">
-                    <h4 className="miniTitle text-center">Customer Review</h4>
-                    <h2>Product Review :{customerReview.length} </h2>
+                    <h2 className="miniTitle text-center mt-3">Customer Review</h2>
+                    <h6 >Product Review :{customerReview.length} </h6>
                     <div className="row">
                         <div className="col-md-12">
                             <OwlCarousel id="customer-testimonoals" className="owl-carousel owl-theme" {...options}>
@@ -108,7 +108,7 @@ const ReviewShow = () => {
                     </div>
                 </div>
             </section >
-        </>
+        </div>
     );
 
 
