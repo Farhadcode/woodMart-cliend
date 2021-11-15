@@ -12,7 +12,7 @@ const Allorder = () => {
             .then(res => res.json())
             .then(data => setAllOrder(data));
     }, [user.email]);
-    // console.log(myOrder);
+    console.log(AllOrder);
 
     const myOrderDelete = (id) => {
 
@@ -23,7 +23,8 @@ const Allorder = () => {
             .then(data => {
                 //console.log(data);
                 if (data.deletedCount) {
-                    alert('admin order delete ')
+                    alert("Delete Sccessfully ?")
+
                     const remaining = AllOrder.filter(order => order._id !== id);
                     setAllOrder(remaining);
                 }
@@ -31,7 +32,7 @@ const Allorder = () => {
     }
     return (
         <div>
-            <h2 className="text-center mb-5">My Order: {AllOrder?.length}</h2>
+            <h2 className="text-center mb-5">All Order: {AllOrder?.length}</h2>
             <Table striped bordered hover>
                 <thead>
                     <tr>
@@ -39,11 +40,8 @@ const Allorder = () => {
                         <th>Name</th>
                         <th>phone</th>
                         <th>Email</th>
-                        {/* <th>Price</th>
-                <th>Address</th> */}
-                        <th>Date</th>
-
-
+                        <th>Address</th>
+                        <th>Status</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -52,16 +50,16 @@ const Allorder = () => {
                         <tr>
                             <td>{index}</td>
                             <td>{order?.name}</td>
-                            <td>{order?.phoneNumber}</td>
+                            <td>{order?.PhoneNumer}</td>
                             <td>{order?.email}</td>
-                            {/* <td>{order?.Charge}</td>
-                    <td>{order?.address}</td> */}
                             <td>{order?.address}</td>
-                            <button className="btn bg-danger p-2" onClick={() => myOrderDelete(order?._id)} >Cancel Order</button>
+                            <td>{order?.status}</td>
+                            <button className="btn bg-danger p-2" onClick={() => myOrderDelete(order?._id)} >Delete Order</button>
                         </tr >
                     </tbody >
                 ))}
             </Table >
+
         </div>
     );
 

@@ -23,7 +23,7 @@ const Navigation = () => {
                             {/* <Link to="/login">Login</Link> */}
 
                             {
-                                user?.email && !admin ?
+                                user?.email ?
                                     <Link to="/userDashboard">Dashboard</Link> : ""
                             }
                             {

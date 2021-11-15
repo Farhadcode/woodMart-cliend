@@ -20,6 +20,7 @@ const Purchase = () => {
 
     const onSubmit = data => {
         console.log(data);
+        data.status = "pending";
         axios.post('https://secret-shelf-20286.herokuapp.com/order', data)
             .then(res => {
                 console.log(res);

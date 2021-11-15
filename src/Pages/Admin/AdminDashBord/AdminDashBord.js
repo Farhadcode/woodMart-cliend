@@ -14,6 +14,7 @@ import Allorder from './../Allorder/Allorder';
 import AddProduct from '../AddProduct/AddProduct';
 import MakeAdmin from './../MakeAdmin/MakeAdmin';
 import AdminRoute from '../../Login/AdminRoute/AdminRoute';
+import ManageProduct from '../ManageProduct/ManageProduct';
 
 
 const AdminDashBord = () => {
@@ -35,6 +36,8 @@ const AdminDashBord = () => {
                                         <Link to={`${url}/allOrder`} className="dashboard-style">All Order</Link>
                                         <br />
                                         <Link to={`${url}/addProduct`} className="dashboard-style" >Add Product</Link>
+                                        <br />
+                                        <Link to={`${url}/manageProduct`} className="dashboard-style" >Manage Product</Link>
 
                                         <br />
                                         <Link to={`${url}/makeAdmin`} className="dashboard-style"> Make Admin</Link>
@@ -51,6 +54,9 @@ const AdminDashBord = () => {
                                 </Route>
                                 <AdminRoute path={`${path}/allOrder`}>
                                     <Allorder></Allorder>
+                                </AdminRoute>
+                                <AdminRoute path={`${path}/manageProduct`}>
+                                    <ManageProduct></ManageProduct>
                                 </AdminRoute>
                                 <AdminRoute path={`${path}/addProduct`}>
                                     <AddProduct></AddProduct>
