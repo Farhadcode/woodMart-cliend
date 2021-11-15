@@ -104,4 +104,3 @@ const Allorder = () => {
 
 export default Allorder;
 
-// onClick={() => myOrderDelete(order?._id)} 
