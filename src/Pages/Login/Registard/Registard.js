@@ -33,8 +33,17 @@ const Registard = () => {
     return (
         <div className="from-style mx-5">
             <h2> Registard </h2>
-            <form onSubmit={handleRegisterSubmit}>
+            {!isLoading && <form onSubmit={handleRegisterSubmit}>
 
+                <input
+                    name="name"
+                    type="text"
+                    placeholder="Your name"
+                    onBlur={handelOnBlur}
+
+                />
+
+                <br />
                 <input
                     name="email"
                     type="email"
@@ -69,6 +78,22 @@ const Registard = () => {
 
                     to="/login"> <Button variant="text">New User? Pleace Login </Button></NavLink>
             </form>
+            }
+            {
+                user?.email && <div className="alert alert-success" role="alert">
+                    User Loging successfully
+                </div>
+            }
+            {
+                authError && <div class="alert alert-danger" role="alert">
+                    {authError}
+                </div>
+            }
+            {
+                isLoading && <div class="spinner-border text-success" role="status">
+                    <span class="sr-only">Login</span>
+                </div>
+            }
         </div>
     );
 };

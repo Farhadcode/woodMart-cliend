@@ -26,7 +26,7 @@ const AddProduct = () => {
                 <textarea  {...register("description")} placeholder="Description" />
                 <input {...register("price")} placeholder="Price" />
                 <input {...register("image")} placeholder="image url" />
-                <input className="main-btn rounded-pill " type="submit" />
+                <input className="main-btn rounded-pill " type="submit" value="Add Product" />
             </form>
         </div>
     );

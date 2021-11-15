@@ -10,13 +10,13 @@ import './Login.css'
 const Login = () => {
 
     const [loginData, setloginData] = useState({});
-    const { user, registerUser, loginUser, logOut } = useAuth()
 
 
-    // const { user, loginUser, isLoading, authError, signInwithGoogle } = useAuth();
 
-    // const location = useLocation();
-    // const history = useHistory();
+    const { user, loginUser, isLoading, authError, signInwithGoogle } = useAuth();
+
+    const location = useLocation();
+    const history = useHistory();
     const handelOnBlur = e => {
         const field = e.target.name;
         const value = e.target.value;
@@ -27,11 +27,13 @@ const Login = () => {
 
     }
     const handleLoginSubmit = e => {
-        loginUser(loginData.email, loginData.password)
+        loginUser(loginData.email, loginData.password, location, history)
         e.preventDefault();
     }
 
-
+    const handleGoogleSignIn = () => {
+        signInwithGoogle(location, history)
+    }
 
     return (
         <div className="from-style mx-5">
@@ -65,6 +67,27 @@ const Login = () => {
                     to="/register"> <Button variant="text">New User? Pleace Registard </Button></NavLink>
 
             </form>
+
+            {
+                user?.email && <div className="alert alert-success" role="alert">
+                    User Loging successfully
+                </div>
+            }
+            {
+                authError && <div class="alert alert-danger" role="alert">
+                    {authError}
+                </div>
+            }
+            {
+                isLoading && <div class="spinner-border text-success" role="status">
+                    <span class="sr-only">Login</span>
+                </div>
+            }
+
+
+
+            <p> -----------------------------------</p>
+            <Button onClick={handleGoogleSignIn} className="btn btn-success"> Google Sing In</Button>
 
         </div>
     );

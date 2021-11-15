@@ -8,7 +8,7 @@ import useAuth from '../../../hooks/useAuth';
 
 const Navigation = () => {
     const { user, logout, } = useAuth()
-    // console.log(user);
+    console.log(user);
 
     return (
         <>
@@ -36,7 +36,7 @@ const Navigation = () => {
                                 <Link to="/login"> <button className="main-btn rounded-pill">Login </button></Link>
                             }
                             <Navbar.Text>
-                                <Link to="/home">{user?.email}</Link>
+                                <Link to="/home">{user?.displayName}</Link>
                             </Navbar.Text>
                         </Nav>
                     </Navbar.Collapse>
