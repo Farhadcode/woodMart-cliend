@@ -21,6 +21,7 @@ import Products from './Pages/AllProduct/Products/Products';
 import Purchase from './Pages/Shop/Purchase/Purchase';
 import UserHome from './Pages/UserDashboard/UserHome/UserHome';
 import UserDashboardHome from './Pages/UserDashboard/userDashboardHome/userDashboardHome';
+import Footer from './Pages/Shared/Footer/Footer';
 
 
 
@@ -61,7 +62,7 @@ function App() {
             </Route>
 
           </Switch>
-
+          <Footer></Footer>
         </Router>
       </AuthProvider>
     </div>
