@@ -8,7 +8,7 @@ import useAuth from '../../../hooks/useAuth';
 
 const Navigation = () => {
     const { user, logout, admin } = useAuth()
-    console.log(user);
+    // console.log(user);
 
     return (
         <>

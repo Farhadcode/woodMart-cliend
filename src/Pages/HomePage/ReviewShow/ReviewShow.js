@@ -16,7 +16,8 @@ const ReviewShow = () => {
             .then(res => res.json())
             .then(data => setCustomerReview(data))
     }, []);
-    // console.log(customerReview);
+
+    //console.log(customerReview);
     // const testiMonials = [
     //     {
 
@@ -81,8 +82,9 @@ const ReviewShow = () => {
                                 {
                                     customerReview.length === 0 ?
                                         <div class="item">
+
                                             <div class="shadow-effect">
-                                                {/* <img class="img-circle" src={userPic} /> */}
+                                                <img class="img-circle" src={`https://i.ibb.co/CP5sj7g/2856040-58866808-2560-1440.jpg`} />
 
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                                             </div>

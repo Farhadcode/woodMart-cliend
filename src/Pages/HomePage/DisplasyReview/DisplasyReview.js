@@ -15,6 +15,7 @@ const DisplasyReview = ({ review }) => {
                 <small>{county}</small>
             </div>
         </div>
+
     )
 };
 
