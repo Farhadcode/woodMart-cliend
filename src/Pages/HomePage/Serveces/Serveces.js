@@ -7,7 +7,7 @@ const Serveces = () => {
     //console.log(servece);
 
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://secret-shelf-20286.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setServece(data.slice(0, 6)))
     }, [])

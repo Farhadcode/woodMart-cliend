@@ -13,6 +13,7 @@ import DashboardHome from '../DashboardHome/DashboardHome';
 import Allorder from './../Allorder/Allorder';
 import AddProduct from '../AddProduct/AddProduct';
 import MakeAdmin from './../MakeAdmin/MakeAdmin';
+import AdminRoute from '../../Login/AdminRoute/AdminRoute';
 
 
 const AdminDashBord = () => {
@@ -48,15 +49,15 @@ const AdminDashBord = () => {
                                 <Route exact path={path}>
                                     <DashboardHome></DashboardHome>
                                 </Route>
-                                <Route path={`${path}/allOrder`}>
+                                <AdminRoute path={`${path}/allOrder`}>
                                     <Allorder></Allorder>
-                                </Route>
-                                <Route path={`${path}/addProduct`}>
+                                </AdminRoute>
+                                <AdminRoute path={`${path}/addProduct`}>
                                     <AddProduct></AddProduct>
-                                </Route>
-                                <Route path={`${path}/makeAdmin`}>
+                                </AdminRoute>
+                                <AdminRoute path={`${path}/makeAdmin`}>
                                     <MakeAdmin></MakeAdmin>
-                                </Route>
+                                </AdminRoute>
                             </Switch>
 
                         </div>

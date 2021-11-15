@@ -13,7 +13,7 @@ const MakeAdmin = () => {
 
     const handleAdminSubmit = e => {
         const user = { email };
-        fetch('http://localhost:5000/users/admin', {
+        fetch('https://secret-shelf-20286.herokuapp.com/users/admin', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -26,7 +26,7 @@ const MakeAdmin = () => {
                 if (data.modifiedCount) {
                     setSucces(true);
                     setEmail('');
-                    console.log(data);
+                    //console.log(data);
                 }
 
             })

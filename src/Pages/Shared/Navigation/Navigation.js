@@ -7,7 +7,7 @@ import useAuth from '../../../hooks/useAuth';
 
 
 const Navigation = () => {
-    const { user, logout, } = useAuth()
+    const { user, logout, admin } = useAuth()
     console.log(user);
 
     return (
@@ -23,11 +23,11 @@ const Navigation = () => {
                             {/* <Link to="/login">Login</Link> */}
 
                             {
-                                user?.email ?
+                                user?.email && !admin ?
                                     <Link to="/userDashboard">Dashboard</Link> : ""
                             }
                             {
-                                user?.email ?
+                                user?.email && admin ?
                                     <Link to="/admin">Admin</Link> : ""
                             }
                             {user?.email ?

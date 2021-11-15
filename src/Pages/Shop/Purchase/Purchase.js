@@ -12,7 +12,7 @@ const Purchase = () => {
     const { register, handleSubmit, reset } = useForm();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${productId}`)
+        fetch(`https://secret-shelf-20286.herokuapp.com/products/${productId}`)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [])
@@ -20,7 +20,7 @@ const Purchase = () => {
 
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/order', data)
+        axios.post('https://secret-shelf-20286.herokuapp.com/order', data)
             .then(res => {
                 console.log(res);
                 if (res.data.insertedId) {

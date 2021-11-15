@@ -9,7 +9,7 @@ const PlaceOrder = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/order', data)
+        axios.post('https://secret-shelf-20286.herokuapp.com/order', data)
             .then(res => {
                 console.log(res);
                 if (res.data.insertedId) {

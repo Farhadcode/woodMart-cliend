@@ -8,7 +8,7 @@ const MyOrder = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myOrders/${user?.email}`)
+        fetch(`https://secret-shelf-20286.herokuapp.com/myOrders/${user?.email}`)
             .then(res => res.json())
             .then(data => setMyOrder(data));
     }, [user.email]);
@@ -16,7 +16,7 @@ const MyOrder = () => {
 
     const myOrderDelete = (id) => {
 
-        fetch(`http://localhost:5000/orders/${id}`, {
+        fetch(`https://secret-shelf-20286.herokuapp.com/orders/${id}`, {
             method: "DELETE",
         })
             .then(res => res.json())
