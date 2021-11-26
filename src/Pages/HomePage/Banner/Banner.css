@@ -1,0 +1,9 @@
+.bannerImage{
+    width: 500px;
+    height: 500px;
+}
+
+.bannerDetal{
+    display: content;
+    margin: 20px;
+}

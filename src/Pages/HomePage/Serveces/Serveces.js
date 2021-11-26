@@ -14,7 +14,6 @@ const Serveces = () => {
     //console.log(servece);
     return (
         <div>
-            <h1> all products{servece.length}</h1>
 
             <div className="service-container">
                 {

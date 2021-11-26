@@ -14,7 +14,7 @@ const Products = () => {
     // console.log(product);
     return (
         <div>
-            <h1> all products{product.length}</h1>
+
 
             <div className="service-container">
                 {
