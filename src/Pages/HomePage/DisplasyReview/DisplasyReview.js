@@ -10,6 +10,7 @@ const DisplasyReview = ({ review }) => {
                 <img className="img-circle" src={image} />
                 <p>{description}</p>
             </div>
+
             <div class="testimonial-name">
                 <h6>{name}</h6>
                 <small>{county}</small>

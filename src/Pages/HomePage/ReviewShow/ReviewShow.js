@@ -18,6 +18,7 @@ const ReviewShow = () => {
     }, []);
 
     //console.log(customerReview);
+
     // const testiMonials = [
     //     {
 
@@ -50,6 +51,7 @@ const ReviewShow = () => {
     const options = {
         loop: true,
         center: true,
+
         items: 3,
         margin: 0,
         autoplay: true,
@@ -75,7 +77,7 @@ const ReviewShow = () => {
             <section id="testimonial" className="testimonials pt-70 pb-70">
                 <div className="container mt-5">
                     <h2 className="miniTitle text-center mt-3">Customer Review</h2>
-                    <h6 >Product Review :{customerReview.length} </h6>
+                    {/* <h6 >Product Review :{customerReview.length} </h6> */}
                     <div className="row">
                         <div className="col-md-12">
                             <OwlCarousel id="customer-testimonoals" className="owl-carousel owl-theme" {...options}>
