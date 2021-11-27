@@ -7,52 +7,81 @@ const Banner = () => {
         <div>
             <Carousel variant="dark">
                 <Carousel.Item>
-                    <div className="d-flex justify-content-between">
-                        <div>
-                            <img
-                                className="d-block bannerImage "
-                                src=" https://i.ibb.co/FxsyRrB/slider-main-demo-1.jpg"
-                                alt="First slide"
-                            />
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row bg-info bg-gragient  d-flex align-items-center  p-5">
+                                <div class="col-lg-6">
+                                    <h1>Cole Killing Boss HeadPhon</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vero laudantium similique minus quasi placeat sequi eos obcaecati saepe deserunt!</p>
+                                    <h1>$289</h1>
+                                    <button class="btn btn-warning">Up Coming</button>
+                                </div>
+                                <div class="col-lg-6">
+                                    <img
+                                        className="d-block bannerImage "
+                                        src=" https://i.ibb.co/FxsyRrB/slider-main-demo-1.jpg"
+                                        alt="First slide"
+                                    />
+                                </div>
+                            </div>
                         </div>
-                        <div className="bannerDetal">
-                            <h2> Hello</h2>
-                        </div>
+
+
 
                     </div>
 
-                    {/* <Carousel.Caption>
-                        <h5>First slide label</h5>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption> */}
-                </Carousel.Item>
-                <Carousel.Item>
-                    <div className="d-flex justify-content-between">
-                        <div>
-                            <h2> Hello</h2>
-                        </div>
-                        <div>
-                            <img
-                                className="d-block bannerImage"
-                                src="  https://i.ibb.co/HVjQXFh/slider-main-demo-2.jpg"
-                                alt="Second slide"
-                            />
-                        </div>
-                    </div>
                 </Carousel.Item>
                 <Carousel.Item>
 
-                    <div className="d-flex justify-content-between">
-                        <div>
-                            <img
-                                className="d-block bannerImage"
-                                src="https://i.ibb.co/hF62WDn/slider-main-demo-3.jpg"
-                                alt="Third slide"
-                            />
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row bg-info bg-gragient  d-flex align-items-center  p-5">
+                                <div class="col-lg-6">
+                                    <h1>Cole Killing Boss HeadPhon</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vero laudantium similique minus quasi placeat sequi eos obcaecati saepe deserunt!</p>
+                                    <h1>$289</h1>
+                                    <button class="btn btn-warning">Up Coming</button>
+                                </div>
+                                <div class="col-lg-6">
+                                    <img
+                                        className="d-block bannerImage"
+                                        src="  https://i.ibb.co/HVjQXFh/slider-main-demo-2.jpg"
+                                        alt="Second slide"
+                                    />
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <h2> Hello</h2>
+
+
+
+                    </div>
+
+                </Carousel.Item>
+                <Carousel.Item>
+
+
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row bg-info bg-gragient  d-flex align-items-center  p-5">
+                                <div class="col-lg-6  ">
+                                    <h1>Cole Killing Boss HeadPhon</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vero laudantium similique minus quasi placeat sequi eos obcaecati saepe deserunt!</p>
+                                    <h1>$289</h1>
+                                    <button class="btn btn-warning">Up Coming</button>
+                                </div>
+                                <div class="col-lg-6 ">
+                                    <img
+                                        className="d-block bannerImage"
+                                        src="https://i.ibb.co/Vmv3NBZ/slider-main-demo-new3.png"
+                                        alt="Third slide"
+                                    />
+                                </div>
+                            </div>
                         </div>
+
+
 
                     </div>
 
