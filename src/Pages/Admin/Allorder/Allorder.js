@@ -68,6 +68,7 @@ const Allorder = () => {
                     </tr>
                 </thead>
                 {allOrder?.map((order, index) => (
+
                     <tbody>
                         <tr>
                             <td>{index}</td>
