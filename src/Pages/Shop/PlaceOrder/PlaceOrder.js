@@ -3,6 +3,7 @@ import axios from 'axios';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import useAuth from '../../../hooks/useAuth';
+import './PlaceOrder.css'
 
 const PlaceOrder = () => {
     const { user } = useAuth();
@@ -20,7 +21,7 @@ const PlaceOrder = () => {
     }
     return (
         <div className="add-service">
-            <h2> Order Place</h2>
+            <h2 className='order'> Order Place</h2>
             <form className="from-style" onSubmit={handleSubmit(onSubmit)}>
                 <input defaultValue={user.displayName} {...register("name", { required: true, maxLength: 20 })} placeholder="Name" />
                 <input defaultValue={user.email}{...register("email")} placeholder="Email" />

@@ -1,0 +1,27 @@
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+  
+
+}
+.purchase{
+   
+    margin: 10px;
+    padding: 10px;
+}
+
+.imageStyle{
+    width: 100%;
+}
+
+
+
+
+/* Make it responsive  */
+
+ @media only screen and (max-width:688px) {
+    .main-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

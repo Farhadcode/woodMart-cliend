@@ -12,7 +12,7 @@ const Banner = () => {
                         <div class="carousel-item active">
                             <div class="row bg-info bg-gragient  d-flex align-items-center  p-5">
                                 <div class="col-lg-6">
-                                    <h1>Cole Killing Boss HeadPhon</h1>
+                                    <h1>Comfortable Chare</h1>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vero laudantium similique minus quasi placeat sequi eos obcaecati saepe deserunt!</p>
                                     <h1>$289</h1>
                                     <button class="btn btn-warning">Up Coming</button>
@@ -38,7 +38,7 @@ const Banner = () => {
                         <div class="carousel-item active">
                             <div class="row bg-info bg-gragient  d-flex align-items-center  p-5">
                                 <div class="col-lg-6">
-                                    <h1>Cole Killing Boss HeadPhon</h1>
+                                    <h1>Office Chare</h1>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vero laudantium similique minus quasi placeat sequi eos obcaecati saepe deserunt!</p>
                                     <h1>$289</h1>
                                     <button class="btn btn-warning">Up Coming</button>
@@ -54,7 +54,6 @@ const Banner = () => {
                         </div>
 
 
-
                     </div>
 
                 </Carousel.Item>
@@ -66,7 +65,7 @@ const Banner = () => {
                         <div class="carousel-item active">
                             <div class="row bg-info bg-gragient  d-flex align-items-center  p-5">
                                 <div class="col-lg-6  ">
-                                    <h1>Cole Killing Boss HeadPhon</h1>
+                                    <h1>Bamboo feature </h1>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vero laudantium similique minus quasi placeat sequi eos obcaecati saepe deserunt!</p>
                                     <h1>$289</h1>
                                     <button class="btn btn-warning">Up Coming</button>
@@ -80,7 +79,6 @@ const Banner = () => {
                                 </div>
                             </div>
                         </div>
-
 
 
                     </div>
