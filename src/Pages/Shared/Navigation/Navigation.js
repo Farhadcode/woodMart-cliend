@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Container, Dropdown, DropdownButton, InputGroup, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Navigation.css'
 
@@ -7,14 +7,14 @@ import useAuth from '../../../hooks/useAuth';
 
 
 const Navigation = () => {
-    const { user, logout, admin } = useAuth()
-    // console.log(user);
+    const { user, logout, admin } = useAuth();
+
 
     return (
         <>
             <Navbar className="navbar" variant="light" sticky="top" collapseOnSelect expand="lg">
                 <Container>
-                    <Navbar.Brand className="logo-style"><Link to="/home"> <span className="log-name">Wood</span><span className="log-name-end">Mart</span></Link></Navbar.Brand>
+                    <Navbar.Brand className="logo-style"><Link to="/home"> <span className="log-name">WOOD</span><span className="log-name-end">MART</span></Link></Navbar.Brand>
                     <Navbar.Toggle className="toggle" />
                     <Navbar.Collapse className="justify-content">
                         <Nav className="nav-style">
@@ -31,8 +31,8 @@ const Navigation = () => {
                                     <Link to="/admin">Admin</Link> : ""
                             }
 
-
-                            <p className="name">{user?.displayName}</p>
+                            <p className="name">
+                                {user?.displayName}</p>
 
                             {user?.email ?
                                 <Link to="/home"> <button onClick={logout} className="main-btn rounded-pill"> LogOut</button></Link>

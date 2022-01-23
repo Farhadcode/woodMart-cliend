@@ -1,9 +1,5 @@
 
 import React, { useState } from 'react';
-
-
-
-
 const MakeAdmin = () => {
     const [email, setEmail] = useState('');
     const [success, setSucces] = useState(false)

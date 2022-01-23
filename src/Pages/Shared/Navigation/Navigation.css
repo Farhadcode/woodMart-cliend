@@ -1,9 +1,17 @@
+
 .navbar{
-    background-color: #4d148C;
+   
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 10px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
 }
 
 .logo-style{
-    font-size: 40px;   
+    font-size: 32px;   
     font-weight: 800;  
     
 }
@@ -37,7 +45,7 @@ Nav a:hover{
     font-size: 24px;   
     font-weight: 700; 
     
-}
+} 
 
 .main-btn {
     font-weight: 800;
@@ -67,3 +75,6 @@ Nav a:hover{
     margin-left: 10px;
     
  }
+
+ /* extra css */
+

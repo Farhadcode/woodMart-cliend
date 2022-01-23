@@ -2,24 +2,24 @@ import React from 'react';
 import './Footer.css'
 
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faFacebookSquare,
-    faInstagramSquare,
-    faTwitterSquare,
-    faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
-import {
-    faPhoneVolume,
-    faMapMarkedAlt,
-} from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//     faFacebookSquare,
+//     faInstagramSquare,
+//     faTwitterSquare,
+//     faYoutube,
+// } from "@fortawesome/free-brands-svg-icons";
+// import {
+//     faPhoneVolume,
+//     faMapMarkedAlt,
+// } from "@fortawesome/free-solid-svg-icons";
 
 
 const Footer = () => {
     return (
         <div>
             <div className="footer-container">
-                <div className="container">
+                {/* <div className="container">
                     <div className="row">
                         <div className="col-md-5">
                             <div className="left-container text-start">
@@ -54,12 +54,12 @@ const Footer = () => {
                                 <ul>
                                     <li className="footer-menu">Home</li>
                                     <li className="footer-menu">Services</li>
-                                    {/* <li className="footer-menu">Sports</li> */}
+                                    <li className="footer-menu">Sports</li>
                                     <li className="footer-menu">Contact us</li>
                                     <li className="footer-menu"> About us</li>
                                 </ul>
                             </div>
-                        </div>
+                        </div >
                         <div className="col-md-5">
                             <div className="right-footer-container">
                                 <h3>Sign up for the newsletter</h3>
@@ -89,13 +89,30 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
+                    </div >
+                </div > */}
+                <div className="mt-2 ">
+                    <div className='d-flex justify-content-center'>
+                        <h2 className='p-2'>
+                            <span className="log-name">WOOD</span><span className="log-name-end"> MART</span>
+                        </h2>
+
+                    </div>
+                    <div>
+                        <h5 className='d-flex justify-content-center'>
+                            WE ENSURE THE BESL QUALITY PRODUCT
+                        </h5>
+                    </div>
+                    <div>
+                    </div>
+                    <div className='d-flex justify-content-center'>
+                        <p>
+                            ©All Rights Reserved By <span className="log-name">WOOD</span><span className="log-name-end">MART</span></p>
                     </div>
                 </div>
-                <p className="mt-5 ">
-                    <small className="d-flex justify-content-center"><span className="log-name">wood</span><span className="log-name-end">Mart</span> © . All rights reserved.</small>
-                </p>
-            </div>
-        </div>
+
+            </div >
+        </div >
     );
 };
 
